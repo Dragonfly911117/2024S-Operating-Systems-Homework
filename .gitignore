@@ -47,6 +47,7 @@
 
 # CMake
 cmake-build-*/
+build/
 
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
@@ -494,3 +495,14 @@ lib/
 
 # Doxygen generated files
 docs/html/
+
+# kernel module files
+*.ko*
+*.cmd
+kBuild
+kbuild
+Kbuild
+KBuild
+
+# Binary output directory
+bin

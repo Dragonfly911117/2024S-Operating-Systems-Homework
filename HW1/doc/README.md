@@ -1,11 +1,15 @@
 ## How to build
 
-- Requirement: CMake 3.27(or above)
-
+- Environment & Requirement: 
+  -  Kernel 6.6.22-1-lts
+  - GCC Version: 13.2.1 20230801
+  - CMake 3.27(or above)
+  - GNU Make: 4.4.1
+  
   ```bash
   build_dir=<build_directory>
-
-  cmake -B $(build_dir>
+  
+  cmake -B $(build_dir)
   cmake --build $(build_dir)
   ```
 
@@ -19,7 +23,7 @@
 
   The built kernel modules will be located at `$(PROJECT_ROOT)/bin/kernel_modules`.
 
-    - Note: The script does **not** (un)install the modules.
+  - Note: The script does **not** (un)install the modules.
 
 ## Team members and responsibility
 
