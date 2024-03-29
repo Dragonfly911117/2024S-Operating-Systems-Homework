@@ -1,9 +1,9 @@
 ## How to build
 
 - Environment & Requirement: 
-  -  Kernel 6.6.22-1-lts
+  - Linux Kernel 6.6.22-1-lts
   - GCC Version: 13.2.1 20230801
-  - CMake 3.27(or above)
+  - CMake 3.27
   - GNU Make: 4.4.1
   
   ```bash
@@ -13,17 +13,9 @@
   cmake --build $(build_dir)
   ```
 
-  The built binary files will be located at `$(PROJECT_ROOT)/bin/applications`.
-- For the kernel modules, one need to explicitly told CMake to build the target `mkm`(**M**ake **K**ernel **M**odule)
-  or `ckm`(**C**lean **K**ernel **M**odule)
+  The built binary files will be located at `$(PROJECT_ROOT)/bin/`.
 
-  ```bash
-   cmake --build $(build_dir) --target mkm
-  ```
-
-  The built kernel modules will be located at `$(PROJECT_ROOT)/bin/kernel_modules`.
-
-  - Note: The script does **not** (un)install the modules.
+  Note: The script does **not** (un)install the modules.
 
 ## Team members and responsibility
 
@@ -34,3 +26,4 @@
 110590048: code, doc
 
 110590066: code, doc
+
