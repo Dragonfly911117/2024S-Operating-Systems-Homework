@@ -1,6 +1,7 @@
 ## How to build
 
-- Environment & Requirement:
+- Environment & Requirement: 
+  - Linux Kernel 6.6.22-1-lts
   - GCC Version: 13.2.1 20230801
   - CMake 3.27
   - GNU Make: 4.4.1
@@ -14,6 +15,7 @@
 
   The built binary files will be located at `$(PROJECT_ROOT)/bin/`.
 
+  Note: The script does **not** (un)install the modules.
 
 ## Team members and responsibility
 
