@@ -9,16 +9,16 @@
 pthread_mutex_t mutex;
 int total = 0;
 int inside = 0;
-#define MAX 21
+
 
 extern int isInsideCircle(double x, double y);
-inline int isInsideCircle(double x, double y) {
+inline int isInsideCircle(double x, double y) {// Check if the point resides in the one-quarter circle
         return x * x + y * y <= 1;
 }
 
 void* worker(void* para) {
-    double x = (double) (random() % MAX) / 10 - 1;
-    double y = (double) (random() % MAX) / 10 - 1;
+    double x = (double) (random() ) / RAND_MAX;
+    double y = (double) (random()) / RAND_MAX;
     int flag = isInsideCircle(x, y);
     printf("x: %f, y: %f, flag: %d\n", x, y, flag);
     pthread_mutex_lock(&mutex);

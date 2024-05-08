@@ -12,3 +12,4 @@ set(CMAKE_C_STANDARD 11)
 
 add_subdirectory("HW1")
 add_subdirectory("HW2")
+add_subdirectory("HW3")
