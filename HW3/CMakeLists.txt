@@ -11,7 +11,7 @@ set(INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
 file(GLOB SRC_FILES ${SRC_DIR}/*.c)
 
 foreach (SRC_FILE ${SRC_FILES})
-    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin/applications)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin/)
     get_filename_component(FILE_NAME ${SRC_FILE} NAME_WE)
     add_executable(${FILE_NAME} ${SRC_FILE})
     target_include_directories(${FILE_NAME} PRIVATE ${INCLUDE_DIR})
